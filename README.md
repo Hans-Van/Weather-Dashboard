@@ -2,10 +2,9 @@
 
 Day 1: Building a weather data collection system using AWS S3 and OpenWeather API
 
-
 # Weather Dashboard
 
-The **Weather Dashboard** is a Python-based application that fetches real-time weather data for multiple cities and stores it in an AWS S3 bucket. This project utilizes AWS Lambda for automation and includes integration with GitHub for version control.
+The **Weather Dashboard** is a Python-based application that fetches real-time weather data for multiple cities and stores it in an AWS S3 bucket.
 
 ## Features
 - Fetches current weather data for cities like Philadelphia, Seattle, and New York.
