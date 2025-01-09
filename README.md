@@ -66,7 +66,8 @@ The application consists of multiple interconnected components to ensure efficie
 
 ---
 
-### File Structure
+```markdown
+## File Structure
 weather-dashboard/
   src/
     __init__.py
@@ -77,14 +78,14 @@ weather-dashboard/
   .gitignore
   requirements.txt
 
-### How It Works
+## How It Works
 - Fetches weather data from a public API (e.g., OpenWeatherMap).
 - Displays temperature (°F), humidity, and weather conditions
 - Automatically stores weather data in AWS S3
 - Supports multiple cities tracking
 - Timestamps all data for historical tracking
 
-### Common Errors and Fixes
+## Common Errors and Fixes
 1. Access Denied (AWS): Ensure your IAM policy has the necessary permissions for creating and managing S3 buckets.
 2. IllegalLocationConstraintException: Verify the S3 bucket region matches your AWS CLI configuration
 
