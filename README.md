@@ -21,6 +21,8 @@ To set up the project locally, follow these steps:
 2. **AWS CLI**: Install and configure the AWS Command Line Interface with your credentials.
 3. **Git**: Install Git for version control.
 4. **VS Code or any text editor**: For editing files.
+5. **Free account with subscription and API Key at (https://openweathermap.org/api)**
+6. **Personal AWS account with basic understanding of AWS and Python**
 
 ### Steps
 1. **Clone the repository**:
