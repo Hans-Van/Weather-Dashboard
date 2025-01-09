@@ -69,14 +69,14 @@ The application consists of multiple interconnected components to ensure efficie
 ```markdown
 ## File Structure
 weather-dashboard/
-  src/
-    __init__.py
-    weather_dashboard.py
-  tests/
-  data/
-  .env
-  .gitignore
-  requirements.txt
+├── src/
+│   ├── __init__.py            # Makes the src folder a Python package
+│   └── weather_dashboard.py   # Main script for the weather dashboard
+├── tests/                     # Folder for unit tests
+├── data/                      # Folder for storing data files (e.g., logs, temporary files)
+├── .env                       # Environment variables (e.g., API keys, secrets)
+├── .gitignore                 # File to specify files/folders to be ignored by Git
+├── requirements.txt           # List of Python dependencies for the project
 
 ## How It Works
 - Fetches weather data from a public API (e.g., OpenWeatherMap).
