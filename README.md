@@ -56,7 +56,6 @@ The application consists of multiple interconnected components to ensure efficie
    - Ensures IAM policies provide necessary permissions for bucket creation, data upload, and public read access.
 
 3. **Automation via AWS Lambda**:
-   - A Lambda function (`gd_notifications.py`) is used to handle periodic tasks or events triggered by changes in S3 or external triggers.
    - Code versioned locally and managed in GitHub, with deployment via AWS.
 
 4. **Version Control**:
@@ -69,21 +68,22 @@ The application consists of multiple interconnected components to ensure efficie
 ---
 
 ### File Structure
-Weather-Dashboard/
-│
-├── src/
-│   ├── weather_dashboard.py  # Main application code
-│   └── gd_notifications.py   # Lambda function code
-│
-├── .env                      # Environment variables (not tracked by Git)
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project description
-└── .gitignore                # Ignored files for Git
+weather-dashboard/
+  src/
+    __init__.py
+    weather_dashboard.py
+  tests/
+  data/
+  .env
+  .gitignore
+  requirements.txt
 
 ### How It Works
-1. Fetches weather data from a public API (e.g., OpenWeatherMap).
-2. Saves the data in an S3 bucket named weather-dashboard-* using randomized suffixes.
-3. Integrates with AWS Lambda for additional automation features.
+- Fetches weather data from a public API (e.g., OpenWeatherMap).
+- Displays temperature (°F), humidity, and weather conditions
+- Automatically stores weather data in AWS S3
+- Supports multiple cities tracking
+- Timestamps all data for historical tracking
 
 ### Common Errors and Fixes
 1. Access Denied (AWS): Ensure your IAM policy has the necessary permissions for creating and managing S3 buckets.
@@ -96,7 +96,6 @@ Weather-Dashboard/
 Working on this project provided valuable insights into various tools and technologies:
 1. **AWS Services**:
    - Gained hands-on experience with AWS S3 for data storage and AWS IAM for managing permissions.
-   - Learned to create, manage, and debug AWS Lambda functions.
    - Understood how to work with the AWS CLI for seamless cloud interactions.
 
 2. **Git and GitHub**:
@@ -110,7 +109,7 @@ Working on this project provided valuable insights into various tools and techno
 
 4. **Automation**:
    - Learned how to use environment variables and automate tasks for efficient workflow.
-
+     
 5. **Debugging**:
    - Resolved issues like S3 bucket creation errors (`IllegalLocationConstraintException`) and permission errors (`AccessDenied`).
    - Understood the importance of aligning S3 bucket regions with AWS configurations.
