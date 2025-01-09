@@ -10,7 +10,6 @@ The **Weather Dashboard** is a Python-based application that fetches real-time w
 - Fetches current weather data for cities like Philadelphia, Seattle, and New York.
 - Stores weather data in AWS S3 buckets for long-term storage.
 - Allows easy tracking and management of weather information.
-- Integrates seamlessly with AWS Lambda for automation.
 - Supports GitHub for version control and collaboration.
 
 ## Setup and Installation
